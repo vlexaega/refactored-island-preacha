@@ -52,7 +52,7 @@ function CategoryMenu() {
                     }}
                     >
                     {item.name}
-                </buton>
+                </button>
             ))}
             <button onClick={() => { handleClick('') }}>
                 All
@@ -60,3 +60,5 @@ function CategoryMenu() {
         </div>
     );
 }
+
+export default CategoryMenu;
