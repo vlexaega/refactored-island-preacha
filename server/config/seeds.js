@@ -28,7 +28,7 @@ db.once('open', async () => {
             description: 
                 'Beach wedding',
             image: 'beach-wedding.jpg',
-            category: categories[1]._id,
+            category: categories[0]._id,
             price: 3000,
             quantity: 1
         },
@@ -37,7 +37,7 @@ db.once('open', async () => {
             description: 
                 'Legal wedding',
             image: 'legal.jpg',
-            category: categories[2]._id,
+            category: categories[0]._id,
             price: 1000,
             quantity: 1
         }
