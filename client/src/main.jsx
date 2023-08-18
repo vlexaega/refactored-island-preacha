@@ -4,9 +4,21 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx';
 import Home from './pages/Home.jsx';
+import NoMatch from './pages/NoMatch';
 
-
-import App from './App.jsx'
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    error: <NoMatch />,
+    children: [
+      {
+        index: true,
+        element: <Home />
+      }
+    ]
+  }
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
